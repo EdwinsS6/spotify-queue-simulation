@@ -29,7 +29,7 @@ Ejemplo de salida:
 
 # Simulación Spotify con Cola FIFO
 
-Este proyecto implementa una simulación tipo Spotify utilizando una estructura de datos Cola (FIFO) desarrollada desde cero en Java. Se trabajó con usando Maven, separando la librería de la estructura de datos.
+Este proyecto implementa una simulación tipo Spotify utilizando una estructura de datos Cola (FIFO) desarrollada desde cero en Java. Se trabajó usando Maven, separando la librería de la estructura de datos.
 
 Para compilar la librería, hay que ubicarse en la carpeta "data-structure.queue" y ejecutar: mvn clean package. Para instalarla en el repositorio local de Maven, ejecutar: mvn clean install. Esto permite que el proyecto handler la utilice como dependencia.
 
@@ -46,5 +46,6 @@ Como decisiones técnicas, se implementó la cola enlazada para garantizar opera
 La prioridad se implementó usando dos colas internas: una para prioridad alta y otra para prioridad normal. Siempre se verifica primero la cola de alta prioridad, garantizando que estas canciones se reproduzcan antes que las normales, respetando el orden FIFO dentro de cada grupo.
 
 La simulación de duración se maneja utilizando Thread.sleep(1000) para representar cada segundo de reproducción, mostrando el progreso en consola junto con una barra visual. Además, se implementó la funcionalidad de skip que permite interrumpir la canción actual presionando ENTER.
+
 
 
